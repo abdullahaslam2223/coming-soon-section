@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("images/bg-pattern-desktop.svg");
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p, input {
+    font-size: 16px;
+}
+
+/* Main container styling starts */
+.container {
+    display: flex;
+    padding-left: 150px;
+    height: 100vh;
+}
+
+/* Main container styling ends */
+
+
+
+/* Content portion styling starts */
+.content {
+    padding-top: 50px;
+}
+
+.w-o-logo {
+    margin-top: 100px;
+}
+
+.w-o-logo h1 {
+    letter-spacing: 5mm;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.w-o-logo h1 span {
+    font-weight: lighter;
+    color: hsl(0, 36%, 70%);
+}
+
+.w-o-logo p {
+    line-height: 6mm;
+    margin-top: 15px;
+    color: hsl(0, 36%, 70%);
+}
+
+.w-o-logo h1, .w-o-logo p {
+    padding-right: 250px;
+}
+
+.w-o-logo input {
+    width: 300px;
+    padding: 15px 25px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 2px solid hsl(0, 36%, 70%);
+}
+
+.w-o-logo .arrow-background {
+    background-color: hsl(0, 36%, 70%);
+    display: inline-block;
+    width: 80px;
+    height: 42px;
+    border-radius: 50px;
+}
+
+.w-o-logo .arrow-icon {
+    width: 10px;
+    margin-left: 33px;
+    margin-top: 12px;
+}
+
+/* Content portion styling ends */
+
+/* Image section styling starts */
+.image {
+    height: 100vh;
+}
+/* image section styling ends */
