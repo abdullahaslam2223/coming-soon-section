@@ -49,31 +49,50 @@ p, input {
 }
 
 .w-o-logo h1, .w-o-logo p {
-    padding-right: 250px;
+    padding-right: 270px;
 }
 
-.w-o-logo input {
+.w-o-logo input[type="email"] {
     width: 300px;
-    padding: 15px 25px;
+    padding: 12px 25px;
     margin-top: 30px;
     border-radius: 30px;
     border: 2px solid hsl(0, 36%, 70%);
 }
+.w-o-logo input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
 
 .w-o-logo .arrow-background {
-    background-color: hsl(0, 36%, 70%);
+    background-image: linear-gradient(hsl(0, 36%, 70%), hsl(0, 93%, 68%));
     display: inline-block;
     width: 80px;
-    height: 42px;
+    height: 48px;
     border-radius: 50px;
+    position: relative;
+    left: -70px;
+    top: 4px;
+    box-shadow: 1px 1px 5px rgb(112, 106, 106);
+    cursor: pointer;
+}
+.arrow-background:hover {
+    background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 .w-o-logo .arrow-icon {
     width: 10px;
-    margin-left: 33px;
-    margin-top: 12px;
+    margin-left: 35px;
+    margin-top: 16px;
 }
 
+#error {
+    display: inline-block;
+}
+.error-icon {
+    position: relative;
+    left: -80px;
+    top: 7px;
+}
 /* Content portion styling ends */
 
 /* Image section styling starts */
