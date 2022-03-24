@@ -17,7 +17,6 @@ p, input {
     padding-left: 150px;
     height: 100vh;
 }
-
 /* Main container styling ends */
 
 
@@ -59,6 +58,7 @@ p, input {
     border-radius: 30px;
     border: 2px solid hsl(0, 36%, 70%);
 }
+
 .w-o-logo input::placeholder {
     color: hsl(0, 36%, 70%);
 }
@@ -99,4 +99,40 @@ p, input {
 .image {
     height: 100vh;
 }
+
+picture source {
+    width: 100px;
+}
 /* image section styling ends */
+
+
+/* Adding responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction:column-reverse;
+        padding-left: 30px;
+    }
+    .w-o-logo h1, .w-o-logo p {
+        text-align: center;
+        padding-right: 0;
+    }
+    .image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .w-o-logo input[type="email"] {
+        width: 100px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+    .w-o-logo .arrow-background {
+        width: 40px;
+        left: -50px;
+    }
+    .w-o-logo .arrow-icon {
+        margin-left: 13px;
+    }
+}
